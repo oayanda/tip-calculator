@@ -14,6 +14,6 @@ bill_split = input("How many people to split the bill? ")
 percentage_tip_amount = (float(percentage_tip) / 100) * float(final_bill)
 bill_split_amount = int(bill_split)
 pay =  (float(final_bill) + percentage_tip_amount) / bill_split_amount
-final_pay = round(pay ,2)
+final_pay = "{:.3f}".format(pay)
 
 print(f"Each person should pay {final_pay}")
